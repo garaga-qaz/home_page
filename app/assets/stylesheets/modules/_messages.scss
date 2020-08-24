@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+.Header {
+  height: 150px;
+  width: 100%;
+  background-color: #aaa;
+}
+.Title {
+  font-size: 20px;
+}
+.wrapper{
+  display: flex;
+}
+
+.Side{
+  height: calc(100vh - 100px -50px);
+  width: 25vw;
+  padding: 20px 10px;
+  background-color: #bbb;
+}
+
+
+.Main{
+  height: calc(100vh - 100px- 50px);
+  width: 75vw;
+  background-color: #998877;
+  .Tarento{
+    font-size: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .Actor{
+    justify-content: space-around;
+    display: flex;
+  }
+  
+  
+}
+
+.footer{
+  height: 50px;
+  width: 100vh;
+}
+
+
