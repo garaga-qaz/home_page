@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+.Header {
+  height: 150px;
+  width: 100%;
+  background-color: #f2f3f3fd;
+  .Contents{
+    text-decoration: none;
+    color: #333333;
+    margin-left: 50px;
+  }
+}
+.Title {
+  font-size: 50px;
+  font-style: italic;
+}
+.wrapper{
+  display: flex;
+}
+
+.Side{
+  height: calc(100% - 100px -50px);
+  width: 25vw;
+  padding: 20px 10px;
+  background-color: #f0f4f7;
+}
+
+
+.Main{
+  height: calc(100% - 100px- 50px);
+  width: 75vw;
+  background-color: #f7f0f0;
+  .Tarento{
+    font-size: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .Actor{
+    justify-content: space-around;
+    display: flex;
+  }
+  
+  
+}
+
+.footer{
+  height: 50px;
+  width: 100%;
+  border-top: solid 1px #333333;
+  display: flex;
+  font-size: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.Submain{
+  height: calc(100% - 150px - 50px);
+  margin: 20px 0 30px 50px;
+
+  &__titlename{
+    font-size: 25px;
+    margin: auto 0 50px;
+    box-sizing: border-box;
+
+  }
+  &__boxbox{
+    display: flex;
+    &__name{
+      font-size: 15px;
+      margin-right: 50px;
+      float: left;
+      clear: left;
+      width: 50%;
+      dd{
+        border-bottom: solid 1px #333333;
+      }
+    }
+    &__map{
+      float: right;
+      clear: right;
+      width: 30%;
+      box-sizing: border-box;
+    }
+  }
+}
+
+
+
