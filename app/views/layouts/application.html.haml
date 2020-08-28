@@ -7,5 +7,22 @@
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
-  %body 
+  %body
+    .Header
+      = link_to "/messages", class: "Contents" do
+        %p1.Title エムアール
+      .Title__name
+        = link_to "/messages/:id", class: "Contents" do
+          COMPANY
+        = link_to "https://www.facebook.com/", class: "Contents" do
+          = icon('fab', 'facebook-square',  class: "Contents__btn--icon")
+          Facebook
+        = link_to "https://twitter.com/", class: "Contents" do
+          = icon('fab', 'twitter', class: "Contents__btn--icon")
+          Twitter
+        = link_to "https://www.instagram.com/", class: "Contents" do
+          = icon('fab', 'instagram', class: "Contents__btn--icon")
+          Instagram 
     = yield
+    .footer
+      %p1.foot Copyright(C)  ALL RIGHTS RESERVED.
